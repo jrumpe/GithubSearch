@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/mercedes"
+            android:id="@+id/body"
+            android:layout_gravity="center"
+            android:text="@string/do_you_want_delete_bookmarks"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/yesBtn"
+                android:layout_weight="5"
+                android:text="@string/yes"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_gravity="left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/noBtn"
+                android:layout_weight="5"
+                android:text="@string/no"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
